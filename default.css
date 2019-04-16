@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css?family=Thasadith:400,700');
+@import url('https://fonts.googleapis.com/css?family=Monsieur+La+Doulaise');
+@import url('https://fonts.googleapis.com/css?family=Calligraffitti');
+
+body {
+	background-color: #ffffff;
+	background-image: url("bg.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.header {
+	padding: 30px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.header-mobile {
+	padding: 0;
+	display: none;
+}
+
+.navbar-light .navbar-brand, .navbar-light .navbar-text, .navbar-light .navbar-nav .nav-link {
+	color: #FFB6C1;
+	font-family: 'Thasadith', serif;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+	color: #DAA520;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.5);
+    border-color: transparent;
+}
+
+.container {
+	padding: 30px;
+	width: 100%;
+	max-width: 650px;
+	margin: 0 auto;
+	background-color: transparent;
+}
+
+.form-group{
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.time-table { 
+	padding: 20px;
+	width: 100%;
+}
+
+input[type="text"], input[type="password"] {
+	width: 100%;
+	height: 32px;
+	padding: 0 8px;
+	background-color: #f2f2f2;
+	border: none;
+	font-family: 'Thasadith', serif;
+}
+
+input[type="password"] {
+	width: 200px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+	border: 1px solid #FFB6C1;
+	outline: none;
+}
+
+button,
+input[type="submit"] {
+	cursor: pointer;
+	display: inline-block;
+	padding: 8px 40px;
+	color: #ffffff;
+	background-color: #FFB6C1;
+	border: none;
+	outline: none;
+}
+
+button:hover { background-color: #FFB6C1; }
+button:focus { background-color: #FFB6C1; }
+
+/* Fonts */
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 10px 0;
+	font-weight: normal;
+	font-family: 'Thasadith', serif;
+}
+
+h1 {
+	font-size: 38px;
+	font-family: 'Monsieur La Doulaise', cursive;
+}
+
+h2 {
+	font-size: 20px;
+	margin: 0 0 5px 0;
+}
+
+h3 {
+	font-size: 22px;
+	font-family: 'Calligraffitti', cursive;
+}
+
+h4 {
+	font-size: 20px;
+	border-bottom: 1px solid #FFB6C1;
+	}
+
+h5 {
+	font-size: 22px;
+	font-family: 'Calligraffitti', cursive;
+	color: #DAA520;
+	margin: 0 0 20px 0;
+}
+
+.time-table h3, .time-table h5 {
+	margin: 0px;
+}
+
+
+p {
+	margin: 0 0 30px 0;
+	font-size: 18px;
+	line-height: 24px;
+	font-family: 'Thasadith', serif;
+}
+
+label {
+	font-size: 18px;
+	line-height: 24px;
+	font-family: 'Thasadith', serif;
+}
+
+span {
+	color: #FFB6C1;	
+	font-weight: bold;
+}
+
+.time-table p {
+	margin: 0px;
+}
+
+a {
+	font-size: 18px;
+	color: #FFB6C1;
+	font-weight: 700;
+	padding: 0 30px;
+	font-family: 'Thasadith', serif;
+	text-decoration: none;
+}
+
+a:hover{
+        text-decoration: none;
+        color: #DAA520 !important;
+    }
+
+.acitive a{
+	text-decoration: none;
+    color: #DAA520;
+}
+
+.name {
+	color: #DAA520;
+	font-size: 42px;
+	line-height: 60px;
+	margin: 0;
+	font-family: 'Monsieur La Doulaise', cursive;
+}
+
+.miia {
+	line-height: 50px;
+}
+
+
+
+/* Columns */
+
+.column-30 {
+  float: left;
+  width: 30%;
+  padding: 0 20px 0 20px;
+}
+
+.column-50 {
+  float: left;
+  width: 50%;
+  padding: 0 20px 0 20px;
+}
+
+.column-70 {
+  float: left;
+  width: 70%;
+  padding: 0 20px 0 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Custom paddings */
+
+.pt-0 {
+	padding-top:0px;
+}
+
+.margin0 h3 {
+	margin: 0px;
+	padding: 0px;
+}
+
+.mb10 p {
+	margin-bottom: 10px;
+}
+
+/* Frame */
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 140%;
+  position: relative;
+}
+ 
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+ 
+/* 4x3 Aspect Ratio */
+.iframe-container-4x3 {
+  padding-top: 75%;
+}
+
+@media (min-width: 992px){
+	
+	.header {
+		padding: 30px;
+	}
+  
+	.navbar-expand-lg .navbar-nav .nav-link {
+		padding-right: 1rem;
+		padding-left: 1rem;
+	}
+
+}
+
+@media all and (max-width: 600px) {
+	
+		.container {
+			padding: 20px 20px 20px 20px;
+			width: 100%;
+		}
+		
+		h1 {
+			font-size: 34px;
+
+		}
+
+		h2 {
+			font-size: 20px;
+		}
+		
+		h3 {
+			font-size: 20px;
+		}
+		
+		h4 {
+			font-size: 18px;
+		}
+		
+		p {
+			font-size: 16px;
+			line-height: 22px;
+		}
+		
+		.name {
+			font-size: 36px;
+			line-height: 56px;
+		}
+		
+		.miia {
+			margin: 0;
+			line-height: 38px;
+		}
+		
+		.column-30 {
+			float: initial;
+			width: 100%;
+			padding: 0 20px 0 20px;
+		}
+		
+		.column-30 p {
+			margin: 0 0 10px 0;
+		}
+		
+		.column-50 {
+			float: initial;
+			width: 100%;
+			padding: 0 20px 0 20px;
+		}
+		
+		.column-70 {
+			float: initial;
+			width: 100%;
+			padding: 0 20px 0 20px;
+		}
+		
+		.column-70 a {
+			padding: 0px;
+		}
+		
+		.iframe-container {
+			overflow: hidden;
+			padding-top: 180%;
+			position: relative;
+		}
+
+	}
+
+@media all and (max-width: 500px) {
+		.iframe-container {
+			overflow: hidden;
+			padding-top: 230%;
+			position: relative;
+		}
+	
+	}
+
+@media all and (max-width: 400px) {
+		.iframe-container {
+			overflow: hidden;
+			padding-top: 300%;
+			position: relative;
+		}
+	
+	}
+	
+@media all and (max-width: 300px) {
+		.iframe-container {
+			overflow: hidden;
+			padding-top: 280%;
+			position: relative;
+		}
+	
+	}

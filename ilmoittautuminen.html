@@ -1,0 +1,131 @@
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<title>Miian ja Jarin häät</title>
+    <link href="default.css" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="header m-auto">
+		<nav class="navbar navbar-expand-lg navbar-light">
+		  <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+			<ul class="navbar-nav m-auto">
+			  <li class="nav-item">
+				<a class="nav-link" href="./index.html">Etusivu</a>
+			  </li>
+			  <li class="nav-item">
+				
+				<a class="nav-link" href="./haainfo.html">Hääinfo</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="./aikataulu.html">Aikataulu</a>
+			  </li>
+			  <li class="nav-item active">
+				<a class="nav-link" href="./ilmoittautuminen.html">Ilmoittautuminen  <span class="sr-only">(current)</span></a>
+			  </li>
+			  <!--<li class="nav-item">
+				<a class="nav-link" href="./valokuvat.html">Valokuvat</a>
+			  </li>-->
+			</ul>
+		  </div>
+		</nav>
+	</div>
+	<div class="container" align="center">
+		<h1>Ilmoittautuminen</h1>
+	</div>
+	<div class="container" align="left">
+	<p>Ilmoittautuminen on auki sunnuntaihin X.X. asti. Huomioithan, että jokaisen perheenjäsenen tulisi ilmoittautua erikseen. Pöytäseurueeseen ei kuitenkaan tarvi listata perheenjäsenten nimiä.
+	<br><br>
+	Mahdollisten peruuntumisten sattuessa, olettehan suoraan yhteydessä morsiameen tai sulhaseen.
+	<br><br>
+	<!--<form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSds7pS4-WlShBTIPpLD06ZetndKeAt8Yu3IR_f32W4GltCaUw/formResponse" method="post" id="application-form" target="_blank">
+		
+		<div class="row">
+			<div class="col">
+				<div class="form-group">
+					<h3 for="name">Nimi *</h3>
+					<input name="entry.1395464774" type="text" id="entry.1395464774"/>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col">
+				<div class="form-group">
+					<h3 for="food">Erikoisruokavalio</h3>
+					<input name="entry.1929041901" type="text" id="entry.1929041901"/></input>
+				</div>
+			</div>
+		</div>
+	  
+		
+		<div class="row">
+			<div class="col">
+				<div class="form-group">
+					<h3 for="avec">Avec / pöytäseurue</h3>
+					<input name="entry.1127611727" type="text" id="entry.1127611727"/></input>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col">
+				<div class="form-group margin0 mb10">
+					<h3 for="psw">Salasana *</h3>
+					<p>Salasana löytyy kutsun mukana tuleesta hääinfosta</p>
+					<input name="entry.2124069609" type="text" id="entry.2124069609"/></input>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col">
+				<div  align="center">
+					<input class="button" type="submit" value="Lähetä">
+				</div>
+			</div>
+		</div>			
+		
+	</form>-->
+		<div class="iframe-container">
+			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSds7pS4-WlShBTIPpLD06ZetndKeAt8Yu3IR_f32W4GltCaUw/viewform?embedded=true" width="640" height="946" frameborder="0" marginheight="0" marginwidth="0">Ladataan...</iframe>
+		</div>
+	</div>
+	<div class="container pt-0" align="center">
+		<p>
+			<img  src=".\decorative.png" style="width:70%; max-width: 300px;" alt="Ornamentti">
+		</p>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	<script>
+    $('#application-form').submit(function(e) {
+        e.preventDefault();
+		var benis = $(this).serialize();
+		debugger;
+        $.ajax({
+            url: "https://docs.google.com/forms/u/1/d/e/1FAIpQLSds7pS4-WlShBTIPpLD06ZetndKeAt8Yu3IR_f32W4GltCaUw/formResponse",
+            data: benis,
+            type: "POST",
+            dataType: "xml",
+			crossDomain: true,
+            success: function(data) {
+			$(this).closest('form').find("input[type=text]").val("");
+            },
+            error: function(xhr, status, error) {
+			debugger;
+			$('#application-form').find("input[type=text]").each(function(i){
+			this.value = "";
+			});
+            }
+        });
+    });
+</script>
+</body>
+
